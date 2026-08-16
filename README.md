@@ -1,9 +1,19 @@
-# dragon_exploder_fred
-Individual Capstone Project: Forecasting 30-Year Mortgage Rates using FRED data and Gradient Boosting
 # FRED Mortgage Rate Forecasting
+## Author
+Patrick Lynch · DSE 6311 Capstone 
 
+## Quick start
+```bash
+git clone https://github.com/lynchpo/dragon_exploder_fred.git
+cd dragon_exploder_fred
+python -m venv .venv
+source .venv/bin/activate         
+pip install -r requirements.txt
+jupyter notebook
+```
 **Individual Capstone Project** – Independent Study  
-**Goal:** Build an end-to-end forecasting pipeline for the 30-year fixed mortgage rate using Federal Reserve Economic Data (FRED), gradient boosting, and Monte Carlo simulation for risk analysis.
+
+**Goal:** Build an end-to-end forecasting pipeline for the 30-year fixed mortgage rate using Federal Reserve Economic Data (FRED), gradient boosting, (Phase 1) and Monte Carlo simulation for risk analysis (Phase 2).
 
 ## Project Structure
 - `data/raw/` — Raw FRED data
@@ -22,6 +32,3 @@ Individual Capstone Project: Forecasting 30-Year Mortgage Rates using FRED data 
 ## Timeline
 - Preliminary Proposal: Week of July 14
 - Final Deliverables: August 27, 2026
-
-## Author
-Patrick
