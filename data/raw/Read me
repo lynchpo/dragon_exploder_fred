@@ -1,0 +1,33 @@
+## Data
+
+### Series used (FRED)
+| FRED id | Description | Native frequency |
+|---------|-------------|------------------|
+| MORTGAGE30US | 30-year fixed mortgage rate (target) | Weekly |
+| DGS10 | 10-year Treasury yield | Daily |
+| FEDFUNDS | Federal funds effective rate | Monthly |
+| UNRATE | Civilian unemployment rate | Monthly |
+| CPIAUCSL | CPI all urban consumers | Monthly |
+| HOUST | Housing starts | Monthly |
+
+Source: [FRED](https://fred.stlouisfed.org/) (Federal Reserve Bank of St. Louis).  
+This project uses **public FRED graph CSV downloads** in the notebooks (no API key required for that method).  
+If you use `fredapi` instead, you need a free FRED API key from https://fred.stlouisfed.org/docs/api/api_key.html.
+
+### How to get the data
+1. Open `notebooks/Capstone_Preprocessing_Feature_Eng.ipynb` (or the baseline notebook).
+2. Run the data-acquisition cells top to bottom. They download the series above and align them to a weekly calendar.
+3. No files need to be placed in `data/` beforehand for a first run.
+
+### Local cache
+After a successful run you may save outputs:
+
+- `data/raw/<SERIES>.csv` — individual FRED pulls  
+- `data/processed/mortgage_features_weekly.csv` — aligned exogenous feature matrix used for modeling  
+
+
+### Feature rule (Phase 1)
+Predictors are **exogenous only**.  
+Locked feature list: `src/phase1_feature_list.txt`.  
+Locked model helpers: `src/phase1_locked_model.py`.  
+Model card: `src/MODEL_CARD_PHASE1.md`.
