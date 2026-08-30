@@ -29,6 +29,17 @@ jupyter notebook phase1_locked_walkthrough.ipynb
 - Gradient boosting models with proper time-series validation
 - Monte Carlo simulation for risk metrics (e.g. maximum drawdown)
 
+## Locked model (`src/phase1_locked_model.py`)
+
+```python
+from phase1_locked_model import (
+    get_locked_params, load_feature_list, make_locked_lgbm, assert_exogenous,
+)
+
+model = make_locked_lgbm()          # C_fixed500
+feats = load_feature_list()         # exogenous names only
+assert_exogenous(feats)             # raises if MORTGAGE30US_* slipped in
+
 ## Timeline
 - Preliminary Proposal: Week of July 14
 - Final Deliverables: August 27, 2026
