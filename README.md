@@ -48,4 +48,4 @@ assert_exogenous(feats)
 
 ## Timeline
 - Preliminary Proposal: Week of July 14
-- Final Deliverables: August 27, 2026
+- Final Deliverables, Phase 1: August 27, 2026
