@@ -23,7 +23,7 @@ jupyter notebook phase1_locked_walkthrough.ipynb
 - `src/` — Reusable functions and modules
 
 ## Key Components
-- Data acquisition via `fredapi`
+- Data acquisition via FRED website
 - Mixed-frequency time series handling
 - Feature engineering (lags, rolling statistics, yield curve spreads)
 - Gradient boosting models with proper time-series validation
