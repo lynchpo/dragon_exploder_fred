@@ -31,14 +31,21 @@ jupyter notebook phase1_locked_walkthrough.ipynb
 
 ## Locked model (`src/phase1_locked_model.py`)
 
-```python
-from phase1_locked_model import (
+ ```python
+- from phase1_locked_model import (
     get_locked_params, load_feature_list, make_locked_lgbm, assert_exogenous,
 )
+```
 
-model = make_locked_lgbm()          # C_fixed500
-feats = load_feature_list()         # exogenous names only
-assert_exogenous(feats)             # raises if MORTGAGE30US_* slipped in
+- model = make_locked_lgbm()          # C_fixed500
+- feats = load_feature_list()         # exogenous names only
+- assert_exogenous(feats)             # raises if MORTGAGE30US_* slipped in
+
+## Self-test
+- (2026-08-30, Colab): git clone into /content/dragon_exploder_fred;
+- src/phase1_locked_model.py present; import succeeds; walkthrough runs
+- FRED download → features → locked C.
+- For a novel user: clone this repo, pip install -r requirements.txt, open from the repo root.
 
 ## Timeline
 - Preliminary Proposal: Week of July 14
