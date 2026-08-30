@@ -9,7 +9,7 @@ cd dragon_exploder_fred
 python -m venv .venv
 source .venv/bin/activate         
 pip install -r requirements.txt
-jupyter notebook
+jupyter notebook phase1_locked_walkthrough.ipynb
 ```
 **Individual Capstone Project** – Independent Study  
 
